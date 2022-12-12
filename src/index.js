@@ -20,11 +20,21 @@ homeButton.addEventListener('click', function(){
 
 const menuButton = document.createElement("button");
 menuButton.textContent = "Menu";
-menuButton.addEventListener('click', menuFunction);
+menuButton.addEventListener('click', function(){
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+      }
+      menuFunction();
+});
 
 const contactButton = document.createElement("button");
 contactButton.textContent = "Contact";
-contactButton.addEventListener('click', contactFunction);
+contactButton.addEventListener('click', function(){
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+      }
+      contactFunction();
+});
 
 buttons.append(homeButton, menuButton, contactButton);
 //homeButton.onclick = initialPageLoadFunction();
