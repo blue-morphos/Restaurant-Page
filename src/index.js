@@ -4,7 +4,7 @@ import { menuFunction } from "./modules/menu";
 
 import { contactFunction } from "./modules/contact";
 
-//const content = document.getElementById("content");
+const content = document.getElementById("content");
 
 const buttons = document.getElementById("buttons");
 
@@ -12,7 +12,9 @@ const buttons = document.getElementById("buttons");
 const homeButton = document.createElement("button");
 homeButton.textContent= "Home";
 homeButton.addEventListener('click', function(){
-
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+      }
     initialPageLoadFunction();
 });
 
