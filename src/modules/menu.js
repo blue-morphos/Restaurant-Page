@@ -1,31 +1,18 @@
 export const menuFunction = () => {
-  const content = document.getElementById("content");
-  const menu = document.createElement("ul");
-  const breakfast = document.createElement("A");
-  breakfast.href =
-    "https://thepembrokedc.com/wp-content/uploads/2022/11/The-Pembroke-Washington-DC-Breakfast.pdf";
-  breakfast.textContent = "Breakfast";
-  breakfast.target = "_blank";
-  const brunch = document.createElement("A");
-  brunch.href =
-    "https://thepembrokedc.com/wp-content/uploads/2022/11/The-Pembroke-Washington-DC-Brunch.pdf";
-  brunch.textContent = "Brunch";
-  brunch.target = "_blank";
-  const lunch = document.createElement("A");
-  lunch.href =
-    "https://thepembrokedc.com/wp-content/uploads/2022/11/The-Pembroke-Washington-DC-Lunch.pdf";
-  lunch.textContent = "Lunch";
-  lunch.target = "_blank";
-  const dinner = document.createElement("A");
-  dinner.href =
-    "https://thepembrokedc.com/wp-content/uploads/2022/11/The-Pembroke-Washington-DC-Dinner.pdf";
-  dinner.textContent = "Dinner";
-  dinner.target = "_blank";
-  const dessert = document.createElement("A");
-  dessert.href =
-    "https://thepembrokedc.com/wp-content/uploads/2022/11/The-Pembroke-Washington-DC-Dessert.pdf";
-  dessert.textContent = "Dessert";
-  dessert.target = "blank";
-  menu.append(breakfast, brunch, lunch, dinner, dessert);
-  content.appendChild(menu);
+  const menu = document.createElement("div")
+  menu.id="menu"
+  content.appendChild(menu)
+  const food1 = document.createElement("div")
+  food1.textContent="Wagyu burger, $13"
+  const food2 = document.createElement("div")
+  food2.textContent = "Tomahawk steak, $38"
+  const food3 = document.createElement("div")
+  food3.textContent = "Split pea soup, $9"
+  const food4 = document.createElement("div")
+  food4.textContent = "Chef salad, $14"
+  const food5 = document.createElement("div")
+  food5.textContent = "Devil's food cake, $9"
+  const food6 = document.createElement("div")
+  food6.textContent = "Apple pie, $9"
+  menu.append(food1, food2, food3, food4, food5, food6)
 };
