@@ -4,6 +4,8 @@ import { menuFunction } from "./modules/menu";
 
 import { contactFunction } from "./modules/contact";
 
+import "./style.css";
+
 const content = document.getElementById("content");
 
 const buttons = document.getElementById("buttons");
