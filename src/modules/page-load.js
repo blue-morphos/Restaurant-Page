@@ -4,7 +4,7 @@ export const initialPageLoadFunction = () => {
   h1.textContent = "Le Meilleur dans le Monde";
   const copy = document.createElement("p");
   copy.textContent =
-    "Named the country's best restaraunt by Redundant Magazine";
+    "Named the country's best restaraunt by Redundant Magazine test";
   const image = document.createElement("IMG");
   content.append(h1, copy, image);
 };
