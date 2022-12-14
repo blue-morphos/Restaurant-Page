@@ -1,5 +1,11 @@
 export const menuFunction = () => {
   const content = document.getElementById("content")
+
+  const titleHeader = document.createElement("h1")
+  titleHeader.textContent = "Menu"
+  titleHeader.setAttribute('class', 'titleHeader')
+  content.appendChild(titleHeader)
+
   const menu = document.createElement("div")
   menu.setAttribute('class', 'menu')
   menu.setAttribute("id", "menu")
